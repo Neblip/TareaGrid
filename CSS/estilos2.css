@@ -1,0 +1,93 @@
+.contenedor
+{
+    background-color: brown;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+    grid-template-areas: "head head head"
+                         "menu menu menu"
+                         "section section ads"
+                         "foot foot foot"
+                         "social social social";
+}
+.contenedor .head
+{
+    background-color: cadetblue;
+    grid-column: head;
+}
+.contenedor .menu
+{
+    background-color: coral;
+    grid-column: menu;
+}
+.contenedor .section
+{
+    background-color: tomato;
+    grid-column: section;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "section1 section2";
+}
+.section .section1
+{
+    background-color: blueviolet;
+    grid-column: section1;
+
+}
+.section .section2
+{
+    background-color: aqua;
+    grid-column: section2;
+}
+.contenedor .ads
+{
+    background-color: violet;
+    grid-column: ads;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "adsname";
+}
+.contenedor .ads .adsname
+{
+    background-color:cornflowerblue;
+    text-align: center;
+    grid-column: adsname;
+}
+.contenedor .foot
+{
+    background-color: turquoise;
+    grid-column: foot;
+}
+.contenedor .social
+{
+    background-color: teal;
+    grid-column: social;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "facebook social2 youtube";
+}
+.contenedor .social .facebook
+{
+    background-color: blue;
+    grid-column: facebook;
+}
+.contenedor .social .social2
+{
+    background-color:aquamarine;
+    grid-column: social2;
+}
+.contenedor .social .youtube
+{
+    background-color: red;
+    grid-column: youtube;
+}
